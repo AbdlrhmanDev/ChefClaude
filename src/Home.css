@@ -1,0 +1,167 @@
+body, main {
+  background: #f6f7fb;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0 auto;
+  
+  padding: 0;
+  width: 70%;
+
+}
+
+.add-ingredient-form {
+  display: flex;
+  gap: 1rem;
+  margin: 2.5rem 0 2.5rem 0;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  padding: 1.2rem 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-ingredient-form input {
+  flex: 1;
+  padding: 1rem 1.3rem;
+  border: 1.5px solid #e0e4ea;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  background: #f7f8fa;
+  color: #222;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+
+.add-ingredient-form input:focus {
+  border-color: #7b9cff;
+  outline: none;
+  box-shadow: 0 0 0 2px #e3eaff;
+}
+
+.add-ingredient-form input::placeholder {
+  color: #b0b8c9;
+}
+
+.add-ingredient-form button {
+  background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem 2rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px rgba(252,92,125,0.08);
+}
+
+.add-ingredient-form button:hover {
+  background: linear-gradient(90deg, #5a6cff 0%, #e14fad 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+h2 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  margin: 2rem 0 1.5rem 0;
+  color: #2d3748;
+  letter-spacing: -1px;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem 0;
+  justify-content: flex-start;
+}
+
+.ingredients-list li {
+  background: linear-gradient(90deg, #e3e8ee 60%, #f6d365 100%);
+  color: #222;
+  font-weight: 600;
+  font-size: 1.08rem;
+  padding: 0.55rem 1.4rem;
+  border-radius: 22px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  display: flex;
+  align-items: center;
+  transition: background 0.2s, box-shadow 0.2s;
+  border: 1.5px solid #e0e4ea;
+}
+
+.ingredients-list li:hover {
+  background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+  box-shadow: 0 4px 16px rgba(253,160,133,0.10);
+}
+
+.get-recipe-container {
+  background: #fff;
+  border-radius: 18px;
+  padding: 2.2rem 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.2rem;
+  margin-top: 0.7rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.get-recipe-container h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: #22223b;
+}
+
+.get-recipe-container p {
+  color: #7b7e87;
+  font-size: 1.08rem;
+  margin: 0;
+}
+
+.get-recipe-container button {
+  background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2.2rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px rgba(106,130,251,0.08);
+}
+
+.get-recipe-container button:hover {
+  background: linear-gradient(90deg, #e14fad 0%, #5a6cff 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 700px) {
+  .get-recipe-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.2rem;
+    gap: 1.2rem;
+  }
+  .get-recipe-container button {
+    width: 100%;
+    padding: 1.1rem 0;
+  }
+  .ingredients-list {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .add-ingredient-form {
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 1rem 0.7rem;
+  }
+} 
