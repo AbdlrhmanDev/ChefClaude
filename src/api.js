@@ -1,5 +1,7 @@
 import { InferenceClient } from "@huggingface/inference";
 
+console.log("ENV:", import.meta.env);
+
 // Get API Key from environment variable
 const HF_ACCESS_TOKEN = import.meta.env.VITE_HF_ACCESS_TOKEN;
 
